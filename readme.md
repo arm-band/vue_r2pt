@@ -14,4 +14,4 @@ jQueryを使わず、Vue.jsのみでページトップへ戻るを実装でき�
 
 ## Demo
 
-- [r2pt test](https://ta-na.github.io/vue_r2pt/)
+- [r2pt test](https://arm-band.github.io/vue_r2pt/)
