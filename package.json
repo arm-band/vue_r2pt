@@ -1,0 +1,31 @@
+{
+    "name": "r2pt",
+    "version": "1.0.0",
+    "description": "Vue.jsを使ったページトップへ戻るのテスト",
+    "main": "main.js",
+    "scripts": {
+        "mkdir": "mkdirp ./dist ./dist/css ./dist/js ./dist/fonts",
+        "scss": "node ./bin/sass.js",
+        "js": "node ./bin/jscopy.js",
+        "font": "node ./bin/font.js",
+        "html": "node ./bin/html.js",
+        "browsersync": "node ./bin/browsersync.js",
+        "compile_copies": "npm-run-all -p js scss font html",
+        "start": "npm-run-all -s mkdir compile_copies browsersync",
+        "test": "npm run browsersync",
+        "stop": "rimraf ./dist"
+    },
+    "author": "Arm=Band",
+    "license": "ISC",
+    "devDependencies": {
+        "vue": "^2.5.17",
+        "vue-smoothscroll": "^0.2.0",
+        "sass-basis": "^9.2.6",
+        "normalize-scss": "^7.0.1",
+        "browser-sync": "^2.24.4",
+        "mkdirp": "^0.5.1",
+        "node-sass": "^4.10.0",
+        "npm-run-all": "^4.1.5",
+        "rimraf": "^2.6.2"
+    }
+}

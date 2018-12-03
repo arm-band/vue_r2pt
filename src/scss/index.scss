@@ -1,0 +1,73 @@
+@import "../../node_modules/sass-basis/src/css/basis.scss";
+
+$vue1: #41B883;
+$vue2: #35495E;
+$bg: #fff;
+$color: #333;
+$r2pt_size: 50px;
+
+.c-page-header {
+    padding: 0.4rem 1rem;
+    background-color: $vue1;
+    &__title {
+        color: $vue2;
+    }
+}
+.main {
+    padding: 1rem 0;
+    background-color: $bg;
+    color: $color;
+    .c-entry {
+        &__header {
+            margin: {
+                top: 2rem;
+                bottom: 0.8rem;
+            }
+        }
+        &__title {
+            color: $vue2;
+        }
+        h3 {
+            margin: {
+                top: 1.6rem;
+                bottom: 0.6rem;
+            }
+        }
+    }
+}
+.footer {
+    background-color: $vue1;
+    color: $bg;
+    padding: 0.4rem;
+    small {
+        display: block;
+        text-align: center;
+    }
+}
+.return2pagetop {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background-color: $vue2;
+    color: $bg;
+    width: $r2pt_size;
+    height: $r2pt_size;
+    vertical-align: middle;
+    text-align: center;
+    a {
+        &, &:link, &:visited, &:active, &:hover, &:focus {
+            color: $bg;
+        }
+    }
+    .fa-fw {
+        line-height: $r2pt_size;
+        font-size: 32px;
+        cursor: pointer;
+    }
+}
+.v-enter-active, .v-leave-active {
+    transition: opacity .3s;
+}
+.v-enter, .v-leave-to {
+    opacity: 0;
+}
